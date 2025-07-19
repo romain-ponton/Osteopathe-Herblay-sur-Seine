@@ -11,6 +11,10 @@ footer {
   width: 100%;
 }
 
+.degrade-diagonal {
+  background: linear-gradient(to bottom right, blue, pink);
+}
+
 
 body {
   display: block;
@@ -29,6 +33,12 @@ body {
 
 
 
+  h1, h2 {
+    text-align: center;
+    background-color: #ebcbf9;
+    color: white;
+    padding: 10px;
+  }
 #btnScrollTop {
   display: none;
   position: fixed;
@@ -117,13 +127,28 @@ body {
 
   
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1040px) {
   .card {
-    max-height: 675px;
+    min-height: 480px;
+    max-height: 500px;
+  }
+  .card-texte {
+     min-height: 250px;
+    max-height: 250px;
+    min-width: 150px;
+    padding : 10px !important;
+    
   }
 
+  .btn {
+    max-width: 50%;
+    max-height: 50%;
+  }
   .section {
     margin-top: 20px;
+  }
+  .btn, .btn-lg {
+    font-size: 0.7em;
   }
 
   .navbar {
@@ -140,16 +165,13 @@ body {
     margin-top: 75px;
   }
 
-
-
   .card-text {
     font-size: 0.9em;
   }
 
-  h1 {
-    font-size: 2.5em;
+ 
   }
-}
+
 
 
 @media (max-width: 768px) {
@@ -209,7 +231,7 @@ a.navbar-brand:hover {
     background-color: #ebcbf9;
     color: white;
     padding: 10px;
-    margin-top: 70px;
+    margin-top: 0px;
     margin-bottom: 20px;
   }
 
@@ -219,7 +241,7 @@ a.navbar-brand:hover {
   }
 
   .card {
-    min-height: 800px;
+    min-height: 770px;
   }
 
   .section {
@@ -238,7 +260,13 @@ a.navbar-brand:hover {
   .img-fluid {
     max-height : 650px;
     max-width: 100%;
-    min-height: 550px;
+    min-height: 790px;
+    margin-bottom: 20px;
+  }
+  .card-img {
+    max-height: 600px;
+    max-width: 100%;
+    min-height: 560px;
   }
 
   .col-lg-4 {
@@ -269,6 +297,7 @@ a.navbar-brand:hover {
   h1 {
     background-color: #ebcbf9;
     padding : 10px;
+    color: white;
   }
 }
 
